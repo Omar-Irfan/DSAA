@@ -23,3 +23,16 @@ function logFirstTwoBoxes(boxes) {
   console.log(boxes[1]) //O(1)
 }
 //O(2) ---> also Constant Time, in constant time we dont care about the number of operations so it is usually rounded down to O(1)
+
+function boxCompression (boxes1, boxes2) {
+  boxes1.forEach(function(box) {
+    console.log(box)
+  }) //O(n)
+
+  boxes2.forEach(function(box) {
+    console.log(box)
+  }) //O(m)
+  
+}
+
+//Big O ---> O(n + m) each input parameter is assessed seperately

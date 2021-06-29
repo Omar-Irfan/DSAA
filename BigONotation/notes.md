@@ -37,3 +37,23 @@ O(n) ---> Linear Time, big O depends on number of inputs linearly
 ## O(1)
 
 O(1) --> Constant Time, very scalable
+
+## Simplifying Big O
+
+-No need to calculate every single step to get big O, ex: O(3n + 5) is simplified to O(n)
+
+-4 rules for calculation Big O
+
+-Rule 1: Worst Case:
+  -ex the in a loop the item you are looking for is the last item in the array so you run the function array.length times
+  -so in that case we assume for the purposes of big O the answer would be O(n) even if the item in the array isn't the last one. akways assume worst case
+
+-Rule 2: Remove Constants:
+  -Constant values do not have a significant impact on scalability given a large enough input ex n + 100 and n are functionally the same after a large enough n value (1000100 is not much more than 1000000)
+
+  -Constant numbers before variables don't actually affect the behaviour of the function O(2n) is still linear so is effectively the same as O(n)
+
+-Rule 3: Different terms for inputs:
+  -When you have a function with multiple inputs, for ex then you calculate the big O of each input individually and then add them together.
+
+-Rule 4: Drop Non Dominants
