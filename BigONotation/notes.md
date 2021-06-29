@@ -66,3 +66,29 @@ O(1) --> Constant Time, very scalable
 -We use big O to compare data structures to see how good they are for specific purposes
 
 Data Structures + Algorithms = Programs
+
+## The worst Big O ---> O(n!)
+- means we are adding a nested loop for every input
+-Will never see this, if your function has this you did something very wrong
+
+## 3 Pillars of Programming
+1. Readable
+2. Scalable (interms of speed) - Has good time complexity
+3. Scalable (interms of space/memory) - Has good space complexity
+
+-usually a trade off between speed and memory, if you want things to go faster you will have to sacrifice memory and vice versa
+
+## Space Complexity
+
+-a program has two ways to remember things, heap and stack
+  -heap : store variables that are assigned values
+  -stack : keep track of function calls
+
+-we look at total size relative to the size of input and see how much new memory we are allocating
+
+## What causes space coomplexity?
+
+-Variables
+-Data Structures
+-Function Call
+-Allocations
