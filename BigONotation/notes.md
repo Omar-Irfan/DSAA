@@ -86,9 +86,13 @@ Data Structures + Algorithms = Programs
 
 -we look at total size relative to the size of input and see how much new memory we are allocating
 
-## What causes space coomplexity?
+## What causes space complexity?
 
 -Variables
 -Data Structures
 -Function Call
 -Allocations
+
+
+-side note: the .length() function in JS is O(1)
+

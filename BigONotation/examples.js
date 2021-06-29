@@ -55,3 +55,30 @@ logPairs(boxes)
 //O(n*n) ---> O(n^2) ---> Quadratic Time
 
 //if the second loop had a different input then iit would be O(n*m)
+
+function boooooo(n) {
+  for (let i = 0; i < n.length; i++) {
+    console.log('boooooo!')
+  }
+}
+// boooooo([1,2,3,4,5,6])
+
+//Time complexity is O(n), what about space complexity?
+//In this function we are only creating the i = 0 variable, other than that we aren't adding any more memory therefore space complexity is O(1)
+
+function arrayOfHiNTimes(n) {
+  let hiArray = [];
+  for (let i = 0; i < n.length; i++) {
+    hiArray[i] = 'hi'
+  }
+  return hiArray
+}
+
+// arrayOfHiNTimes(6)
+
+//We create a variable (i) and a datastructure (the array) so its is O(n+1) or just O(n)
+
+//Twitter exampl, find 1st, find nth....
+const array = [{'hi'}, 'my', 'teddy']
+array[0]
+array[array.length-1] // O(1)
