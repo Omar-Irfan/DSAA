@@ -54,6 +54,15 @@ O(1) --> Constant Time, very scalable
   -Constant numbers before variables don't actually affect the behaviour of the function O(2n) is still linear so is effectively the same as O(n)
 
 -Rule 3: Different terms for inputs:
-  -When you have a function with multiple inputs, for ex then you calculate the big O of each input individually and then add them together.
+  -When you have a function with multiple inputs, for ex then you calculate the big O of each input,
+
+  In the case of two seperate loops you would add the inputs, in the case of two nested loops you would multiply them
 
 -Rule 4: Drop Non Dominants
+  -Drop all terms except for the most dominant term (when scaled). If you had O(n + n^2) make it O(n^2)
+
+## What does this all mean?
+
+-We use big O to compare data structures to see how good they are for specific purposes
+
+Data Structures + Algorithms = Programs
