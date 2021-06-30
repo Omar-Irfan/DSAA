@@ -17,4 +17,47 @@ strings.unshift('x'); //O(n) add to the begining of the array. adding a new valu
 //splice
 strings.splice(2, 0, 'alien'); //O(n) adds string after a given index, shifts all the other indexes plus 1. Also the same for deleting in the middle of the array if the middle number is changed.
 
-console.log(strings)
+// console.log(strings)
+
+//Building an Array
+
+class MyArray {
+  constructor() {
+    this.length = 0
+    this.data = {}
+  }
+  get(index) {
+    return this.data[index]
+  }
+  push(item) {
+    this.data[this.length] = item
+    this.length++
+    return this.length
+  }
+  pop() {
+    const lastItem = this.data[this.length - 1]
+    delete this.data[this.length - 1]
+    this.length--
+    return lastItem
+  }
+  delete(index) {
+    const item = this.data[index];
+    this.shiftItems(index);
+    return lastItem
+  }
+
+  shiftItems(index) {
+    for(let i = index; i < this.length - 1; i++) {
+      this.data[i] =  this.data[i+1]
+    }
+    delete this.data[this.length-1]
+  }
+}
+
+const newArray = new MyArray()
+// newArray.push('Omar')
+// newArray.push('Irfan')
+// newArray.push('!')
+// newArray.pop()
+// newArray.delete(0)
+// console.log(newArray)

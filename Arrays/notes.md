@@ -22,3 +22,6 @@ lookup/access = O(1)
 append = O(1) (can be O(n)) - in the copying of a dynamic array to rebuild it it gets looped, thats why it can be O(n) --- not that important
 insert = O(n)
 delete = O(n)
+
+## Building an Array
+
