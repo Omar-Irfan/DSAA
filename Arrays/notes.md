@@ -23,5 +23,21 @@ append = O(1) (can be O(n)) - in the copying of a dynamic array to rebuild it it
 insert = O(n)
 delete = O(n)
 
-## Building an Array
+## Strings and Arrays
+-in interviews, treat any string question as an array question
+-strings are an array of characters
+-When you get a string question convert into array
+-do operations on it
+-the return as a string
 
+## Arrays Summary
+
+Pros
+-Fast lookups
+-Fast push/pop
+-ordered
+
+cons
+-slow inserts
+-slow deletes
+-fixed size (if using static array)
