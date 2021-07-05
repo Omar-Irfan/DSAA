@@ -41,3 +41,17 @@ property name gets hashed and hash is directly linked to value in memory so acce
 -both arrays and hash tables are quick for looking up values
 
 -But hash tables have no concept of order
+
+## Hash table summary
+
+-Hash table to optimize a question is the most common interview question
+Pros:
+-Fast lookups (good collision resolution needed)
+-Fast insert
+-Flexible keys
+-Improve time complexity(fast access)
+
+Cons:
+-Unordered
+-Slow key iteration
+-UUse more memory (worse space complexity)
