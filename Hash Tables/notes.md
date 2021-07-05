@@ -31,3 +31,13 @@ property name gets hashed and hash is directly linked to value in memory so acce
 -Maps allow users to have any data type as a key
 -Maps also maintain insertion orders (Objects do not have an order)
 -Sets store keys and not values
+
+## Hash Tables vs Arrays
+
+-Hashes allow quick access to values 
+-Inserting is also very fast
+-Collision is a rare occurance
+
+-both arrays and hash tables are quick for looking up values
+
+-But hash tables have no concept of order
