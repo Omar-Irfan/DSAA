@@ -46,3 +46,9 @@
   lookup O(n) - How is this better than Arrays?
   insert O(n) - How is this better than Arrays?
   delete O(n) - How is this better than Arrays?
+  
+  Will discuss later...
+
+  ## What is a Pointer
+
+  -a reference to another place in memory
