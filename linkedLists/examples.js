@@ -35,7 +35,7 @@ obj2 = "love"
 class Node {
   constructor(value) {
     this.value = value
-    this,next = null
+    this.next = null
   }
 }
 
@@ -61,11 +61,75 @@ class LinkedList {
     this.head = newNode
     this.length ++
     return this
-}
+  }
+  printList(){
+    const array = []
+    let currentNode = this.head;
+    while (currentNode !== null) {
+      array.push(currentNode.value)
+      currentNode = currentNode.next
+    }
+    return array
+  }
+  insert(index, value) {
+    if(index === 0) {
+      this.prepend(value);
+      return this.printList();
+    }
+    if(index >= this.length) {
+      this.append(value)
+      return this.printList();
+    }
+    let traverse = 0
+    let prevNode = null
+    let currentNode = this.head
+    while (traverse !== index) {
+      prevNode = currentNode
+      currentNode = currentNode.next
+      traverse++
+    }
+
+    if(traverse === index) {
+      const newNode = new Node(value)
+      newNode.next = currentNode
+      prevNode.next = newNode
+      this.length++
+    }
+    return this
+  }
+  insert2(index, value){
+    //Check for proper parameters;
+    if(index >= this.length) {
+      console.log('yes')
+      return this.append(value);
+    }
+    
+    const newNode = {
+      value: value,
+      next: null
+    }
+    const leader = this.traverseToIndex(index-1);
+    const holdingPointer = leader.next;
+    leader.next = newNode;
+    newNode.next = holdingPointer;
+    this.length++;
+    return this.printList();
+  }
+  traverseToIndex(index) {
+    //Check parameters
+    let counter = 0;
+    let currentNode = this.head;
+    while(counter !== index){
+      currentNode = currentNode.next;
+      counter++;
+    }
+    return currentNode;
+  }
 }
 
 const myLinkedList = new LinkedList(10)
 myLinkedList.append(5)
 myLinkedList.append(16)
 myLinkedList.prepend(1)
-console.log(myLinkedList)
+myLinkedList.insert(2,99)
+console.log(myLinkedList.printList())
