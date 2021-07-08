@@ -30,7 +30,7 @@ obj2 = "love"
 //         next: null
 //       }
 //     }
-//   }
+//   } 
 // }
 class Node {
   constructor(value) {
@@ -43,6 +43,7 @@ class LinkedList {
   constructor(value){
     this.head = {
       value: value,
+      prev: null,
       next: null
     }
     this.tail = this.head
@@ -50,6 +51,7 @@ class LinkedList {
   }
   append(value) {
     const newNode = new Node(value)
+    newNode.prev = this.tail
     this.tail.next = newNode
     this.tail = newNode
     this.length ++
@@ -59,6 +61,7 @@ class LinkedList {
     const newNode = new Node(value)
     newNode.next = this.head
     this.head = newNode
+    this.head.prev = null
     this.length ++
     return this
   }
@@ -93,6 +96,7 @@ class LinkedList {
       const newNode = new Node(value)
       newNode.next = currentNode
       prevNode.next = newNode
+      newNode.prev = prevNode
       this.length++
     }
     return this
@@ -112,6 +116,7 @@ class LinkedList {
     const holdingPointer = leader.next;
     leader.next = newNode;
     newNode.next = holdingPointer;
+    newNode.prev = leader
     this.length++;
     return this.printList();
   }
@@ -131,6 +136,7 @@ class LinkedList {
     const delNode = prevNode.next
     prevNode.next = delNode.next
     delNode.next = null
+    delNode.prev = null
     this.length--
     return this.printList()
   }

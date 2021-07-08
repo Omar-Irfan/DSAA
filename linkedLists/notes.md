@@ -52,3 +52,13 @@
   ## What is a Pointer
 
   -a reference to another place in memory
+
+  ## Doubley Linked List
+
+  -Up until this point we covered singley linked list
+  -Doubley linked lists link to the previous node as well
+  -Pointer to the next and previous node
+  -Allow backwards traversal
+  -Searching becomes more efficient
+  -lookup/traversal is technically O(n/2) so would be somewhat faster
+  -The downside is it has more data so it takes up more memory
