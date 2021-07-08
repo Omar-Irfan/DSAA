@@ -125,6 +125,15 @@ class LinkedList {
     }
     return currentNode;
   }
+  remove(index) {
+
+    const prevNode = this.traverseToIndex(index-1)
+    const delNode = prevNode.next
+    prevNode.next = delNode.next
+    delNode.next = null
+    this.length--
+    return this.printList()
+  }
 }
 
 const myLinkedList = new LinkedList(10)
@@ -132,4 +141,7 @@ myLinkedList.append(5)
 myLinkedList.append(16)
 myLinkedList.prepend(1)
 myLinkedList.insert(2,99)
+console.log(myLinkedList.printList())
+myLinkedList.remove(2)
+myLinkedList.remove(3)
 console.log(myLinkedList.printList())
