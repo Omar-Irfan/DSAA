@@ -62,3 +62,34 @@
   -Searching becomes more efficient
   -lookup/traversal is technically O(n/2) so would be somewhat faster
   -The downside is it has more data so it takes up more memory
+
+  ## Singely vs Doubely
+
+  Singley:
+    Pros:
+      -simple implementation
+      -requires less memory
+      -delete, insert are slightly faster
+
+    Cons:
+      -cannot be iterated in reverse
+      -if we ever lose the reference to the head the list will be lost in memory forever
+
+    When to use:
+      -you have memory limitations
+      -need fast insertion and deletion, not much searching esp at begining/end 
+
+  Doubley:
+    Pros: 
+      -Can traverse backwards
+
+    Cons:
+      -Fairly complex to implement
+      -uses lots of storage
+      -need extra operations to preform to make sure insert/delete works for bakcwards link
+
+    When to use:
+      -you need to search backwards and forwards
+      -you do not have memory limitations
+    
+    Will mostly see singely linked lists
