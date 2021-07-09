@@ -40,3 +40,21 @@
     peek O(1) - same as peek in stack but for first item
 
 creating queues and stacks would be very inefficient
+
+## Should stacks be built with arrays or LinkedLists?
+
+  Both are good for stacks
+
+  Arrays allow cached locality allows you to access data faster since they are right next to each other in memory unlike linked lists
+
+  Linked lists have extra memory associated with them but they also have dynamic memory (no doubling up)
+
+  So it depends on what your priorities are with the Stack
+
+## Should queues be built with arrays or LinkedLists?
+
+  You would never want to build a queue with an array
+  
+  -Arrays have indexes
+  -When you remove an element you have to shift indexes O(n)
+  -Where as with linkedlists we have a pointer for head/tail O(1)
