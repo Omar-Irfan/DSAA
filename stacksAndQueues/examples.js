@@ -18,17 +18,28 @@ class Stack {
   }
   push(value){
     const newNode = new Node(value)
-    newNode.next = this.top
-    this.top = newNode
-    this.length++
-    return this
+    if(this.length === 0){
+      this.top = newNode
+      this.bottom = newNode
+    } else {
+      const holdingPointer = this.top;
+      this.top = newNode;
+      this.top.next = holdingPointer
   }
+  this.length++
+  return this
+}
   pop(){
-    const newTop = this.top.next
-    const oldTop = this.top
-    this.top = newTop
+    if(!this.top){
+      return null
+    }
+    if(this.top === this.bottom) {
+      this.botom = null
+    }
+    this.top = this.top.next
     this.length--
-    return oldTop
+    return this
+
 
   }
   isEmpty() {
@@ -39,12 +50,39 @@ class Stack {
   }
 }
 
-const myStack = new Stack();
-
-
+// const myStack = new Stack();
+// myStack.push("Discord")
+// myStack.push("Udemy")
+// // console.log(myStack)
+// // console.log(myStack.peek())
+// myStack.push("Google")
+// myStack.pop()
+// myStack.pop()
+// myStack.pop()
+// console.log(myStack)
 
 
 //Discord
 //Udemy
 //google
 
+//Stack with Arrays
+
+class Stack {
+  constructor(){
+    this.array = []
+    this.top = array[array.length-1];
+    this.bottom = array[0];
+    this.length = 0;
+  }
+  peek() {
+    return this.top
+  }
+  push(value){
+   this.array.push(value)
+}
+  pop(){
+    this.array.pop()
+  }
+ 
+}
