@@ -58,3 +58,9 @@ creating queues and stacks would be very inefficient
   -Arrays have indexes
   -When you remove an element you have to shift indexes O(n)
   -Where as with linkedlists we have a pointer for head/tail O(1)
+
+## Summary
+
+Pros: Fast operations, fast peek, ordered
+
+Cons: slow lookup
