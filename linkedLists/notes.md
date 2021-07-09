@@ -93,3 +93,15 @@
       -you do not have memory limitations
     
     Will mostly see singely linked lists
+
+    ## Summary
+
+    -Fundamental/low level data structure, used in other data structures like hash tables, stacks, queues
+    -Pros: Fast insertion, deletion, ordered, flexible size
+    -Cons: slow lookup (no index or key), more memory
+
+    Primary reason to use a linked list:
+
+    Simplicity + ability to grow and shrink as needed 
+    
+    Used in browser history, file system on computer
