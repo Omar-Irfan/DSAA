@@ -55,7 +55,7 @@ class BinarySearchTree {
       return false
     }
   }
-  // remove
+
 }
 
 const tree = new BinarySearchTree();
@@ -79,3 +79,9 @@ function traverse(node) {
   tree.right = node.right === null ? null : traverse(node.right);
   return tree;
 }
+/*hello a freindly greeting from the maker of this programs Favrite nephew*/
+/*
+iylhlh
+hilhlk
+jggkj
+*/

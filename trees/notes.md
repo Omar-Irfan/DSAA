@@ -102,3 +102,69 @@ Cons:
 -Better than hash tables interms of having sorted data/parent child relationships
 
 -BSTs aren't the fastest for anything - usually have O(log n)
+
+
+## Balanced Binary Search Trees
+
+AVL Trees and Red/Black Trees will autoomatically balance out the tree if it becomes imbalanced 
+
+## Heaps
+-Most likely going to talk about Binary Heaps (two children to a node)
+
+## Binary Heap
+
+-Every child belongs to a parent node with a greater priority (value) - Max Heap
+-Min Heap is the opposite (root nodoe is smallest, each child is greater priority than parent)
+-Every node on a higher level has a greater value than any of node at a lower level
+-Used where ordering is important
+-Can't do o(1) like with arrays and hash tables
+-Its a tree so there are traversals
+-Compared to BST its lookup is slower (O(N) vs O(log N)) this is because it is less ordered (the right side is not always the greater one, the only restriction comes from the parent-child relationship) 
+-When searching we'd have to check every single node
+
+-Binary heaps are very good for comparative operations you can easily find all values that are less than a specific value for example. with a BST that woould be O(n)
+-Used in priority queues and sorting algorithims
+-Heaps add value to the tree iin order from left to right then bubbles up to go to correct priority order
+-Inserts/Deletes Worst Case: O(log N), best case: O(1)
+-Memory Heap != Heap Data Structure
+
+## Operations
+Lookup O(n)
+Insert O(log N)
+Delete O(log N)
+
+-Take up the lowest amount of space possible, always left to right insertion
+-No concept of imbalanced Binary Heap, always complete
+-Preserve order of insertion
+-Can implement them using arrays
+
+## Priority Queues
+-Binary heaps are really useful for this
+-Type of data structure where each element has a priority
+-Elements with higher priorities served before ones with lower priorities
+
+## Pros and Cons
+
+Pros:
+-Better than O(n)
+-Priority
+-Flexible Size
+-Fast Insert (most of the time)
+
+Cons:
+Slow Lookup (usually you are trying to find max and min which is O(1))
+
+## Trie
+-Specialized tree used in searching (most often text)
+-in most cases outperforms, binary search trees, hash tables and most other data structures (depending on the type of search)
+-let you know if a word or a part of a word exists in a text
+-Empty root node (starting point) from there letters are added
+-Can have several children
+-once you go to a node you can see the options for its child nodes based on the words that appear in the text
+-Think of auto complete, dictionaries
+-benefit is speed and space
+-the Big O for finding a word is O(length of the word)
+-We don't have to store letters/prefixes multiple times because each letter is one node so you just need different children for words that start with the same letter this saves alot of space
+
+## Summary
+-Small variations in different trees are fairly easy to pick up once you know the basics of trees
