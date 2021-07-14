@@ -50,3 +50,36 @@ use return before inception otherwise the final value won't bubble to the top
 -seen with recursive algorithims
 -pretty bad time complexity wise
 -number of function calls exponentially for every additional element
+
+## Recursion vs Iteration
+
+-Anything you do with a recursion you can do iteratively (loop)
+-both have pros and cons
+-Recursion can help keep code DRY
+-Recursive functions might make your code more readable and simpler
+
+Pros:
+-DRY
+-Readable
+
+Cons:
+-Large Stack (huge memory footprint)
+-Might have huge time complexity
+-Might be hard to understand
+
+
+recursion is useful when you arent sure how many loops you'll be going through with a particular data structure
+
+Tail Call Optimization - a way to use recursion without increasing the call stack
+
+## When to use recursion
+
+Everytime you are using a tree or converting something into a tree, consider recursion
+
+What to look for in interview questions
+
+1.Divided into a number of subproblems that are smaller instances of the same problem.
+2.Each instance of the subproblem is identical in nature
+3.The solutions of each subproblem can be combined to solve the problem at hand
+
+Divide and conquer using recursion
