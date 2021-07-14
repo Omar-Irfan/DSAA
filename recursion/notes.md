@@ -83,3 +83,10 @@ What to look for in interview questions
 3.The solutions of each subproblem can be combined to solve the problem at hand
 
 Divide and conquer using recursion
+
+## Summary
+-Recursion = function calls itself
+-need to be careful of stack overflow
+-less efficient than iterative solutions most of the time but can be more readable
+-have to be very careful with it
+-when we come to sort/traversal we will have to use recursion
