@@ -24,3 +24,11 @@
 -when you cant its acyclic
 
 Directed Acyclic Graph (DAG)
+
+## Pros and cons
+
+-so many different types so hard to do a general big O
+Pros:
+  relationships
+Cons:
+  scaling is hard
