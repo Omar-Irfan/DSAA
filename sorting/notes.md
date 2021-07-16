@@ -22,3 +22,19 @@
 -usually used as a learning tool
 -Time Complexity = O(n^2)
 -Space Complexity = O(1)
+
+
+## Selection Sort
+-second of the 3 elementary sorts
+-scans all items for smallest element and then swaps it with value at first index
+-Time Complexity = O(n^2)
+-Space Complexity = O(1)
+-Even worse than bubble sort
+
+## Insertion Sort
+-Used when you are sure list is almost sorted
+-look at item at index and push it to the back if itis smaller than previous numbers at their indexes
+-first sorting algorithim to be done when data set is nearly sorted
+1 2 3 4 7 6 5 8
+1 2 3 4 6 7 5 8
+1 3 4 4 5 6 7 8
