@@ -38,3 +38,23 @@
 1 2 3 4 7 6 5 8
 1 2 3 4 6 7 5 8
 1 3 4 4 5 6 7 8
+
+## Merge Sort + Quick Sort
+-Use divide and conquer and recursion
+-do work on each subset and then combining the solutions
+-have time complexiity of O(n log n)
+
+## O(n log n)
+--Better than O(n^2) (so better than other sorts)
+--no nested for loops
+
+## Merge Sort
+-divide list into half then divide each subset into half again until you only have 1 item per set
+-Order each pair from lowest to highest and put them together again
+-then sort the combined sub sections and merge them together until you have a sorted list
+-One of the most efficient ways to sort
+- the first n in n log n refers to the loop
+-While we have to compare everythiing atleast once, we dont have to compare everything to everything so therefore no nesting
+-Only have to compare local lists to each other
+-stable )(meaning two of the same items will retain the order in which they appear)
+-Space complexity - O(n) due to breaking up the list
