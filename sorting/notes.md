@@ -58,3 +58,7 @@
 -Only have to compare local lists to each other
 -stable )(meaning two of the same items will retain the order in which they appear)
 -Space complexity - O(n) due to breaking up the list
+
+## Stable vs Unstable Algorithims
+
+A sorting algorithm is said to be stable if two objects with equal keys appear in the same order in sorted output as they appear in the input array to be sorted. Some sorting algorithms are stable by nature like Insertion sort, Merge Sort, Bubble Sort, etc. And some sorting algorithms are not, like Heap Sort, Quick Sort, etc.
