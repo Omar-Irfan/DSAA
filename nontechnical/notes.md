@@ -74,3 +74,5 @@
 -Where is this company going in the next 5 years
 -How have your own skills improved since joining thiis company?
 -What do you wish somebody told you before starting this job at this company
+-Revenue growth model
+-funding
