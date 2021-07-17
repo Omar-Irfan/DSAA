@@ -73,6 +73,10 @@ A sorting algorithm is said to be stable if two objects with equal keys appear i
 -to do this you find number greater you pull it out of the list, you move the pivot to the left and you pull the number that was in the left and you put it where the greater number was, then you place the greater number to the right of the pivot
 -after you loop every number based on the pivot you now know the correct location of the pivot and all the numbers are on the correct side (just need to be ordered)
 -Now you split the list into two lists at the pivot and you use the pivot technique to rearrange it such that they are now ordered (may have to keep breaking down)
--You pick the pivot point at random (depends on which kiind of quick sort method)
+-You pick the pivot point at random (depends on which kind of quick sort method)
 -Quick sort has O(log(n)) space complexity
--worst case for time complexity is O(n^2) (when pivot is smallest or largest item in array)
+-worst case for time complexity is O(n^2) (when pivot is smallest or largest item in array, in this case you dont really split the list) 
+-pick the pivot intelligently
+-quick sort is usually the fastest but has a nasty worst case.
+-if you cannot garauntee that the pivot will be good, avoid quick sort
+
