@@ -80,3 +80,55 @@ A sorting algorithm is said to be stable if two objects with equal keys appear i
 -quick sort is usually the fastest but has a nasty worst case.
 -if you cannot garauntee that the pivot will be good, avoid quick sort
 
+## Which sort is the best? 
+Use Insertion Sort: IIf your input is small and items are mostly sorted
+  -uses very little space and easy to implement
+
+Use Bubble Sort: Almost never, only really used for educational purposes. Not efficent
+
+Use Selection Sort: Almost never, only really used for educational purposes. Not efficent
+
+Use Merge Sort: Fast, best case and worst case are the same, if you are worried about worst case scenario use Merge Sort. If you are worried about space, merge sort will be expensive (O(n)), if you are using external sorting merge sort is good
+
+Use Quick Sort: Same time coomplexity as merge sort in avg and best case scenario with much less space complexity. One of the most popular sorting algorithims. If you dont pick a good pivot though, it will have terrible time complexity. If you are worried about worst case dont use this
+
+What about Heap Sort? On avg it is slower than merge or quick sort so ffoor most cases either quick or merge is a better option
+
+
+## Other Sorting Algorithims
+
+## Heap sort
+Heap: ordered binary tree
+max heap: value of parent nodes > value of child nodes
+-continously create max heaps to find largest item
+-remove item and place into sorted partition
+-represent array as tree by just filling in tree from top to bottom while goiing left to right in the array (index 0 is at the top)
+-turn tree into heap (order it)
+-swap highest number with last number in array and remove last number from tree (assume it is sorted)
+-turn tree into heap again and follow the same steps
+-do this until array is sorted
+-Time complextity O(n log n) (but slower than merge or quick sort)
+
+## Can we beat O(n log n)?
+
+Mathematically it is impossible to beat O(n log n)
+-This is the fastest possible way to compare items in a list
+-What if we don't make comparisons?
+
+## Non-Comparison Sort
+
+Counting Sort
+Radix Sort
+
+Comparison sort - Is this element bigger than another element? Until every number gets compared
+
+Non-Comparison Sort - use the way numbers are stored in data to our advantage to sort without comparing, really really complex
+These algorithims only work with fixed length integers in a specified range. (Comparison sort work for all types of data)
+have smaller time complexities than other sorts O(n+k)/O(nk) etc
+
+## Summary
+-Most of the time we talk of the O(n log n)
+-Quick sort, use when avg matters more than worst case, has O(log(n)) memory
+-merge is stable and has O(n log n) worst case but has O(n) memory
+-Selection and Bubble you dont really use
+-Insertion is good for small data and good for nearly sorted data
