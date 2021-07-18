@@ -10,7 +10,7 @@ function findNemo(array) {
 
 // findNemo(nemo)
 
-// if we have 4 items in the array there would be 4 operations, if we have 5 there would be 5 etc. Linear pattern. Therefore this function has a notation of O(n) ---> Linear Time, big O depends on number of inputs linearly 
+// if we have 4 items in the array there would be 4 operations, if we have 5 there would be 5 etc. Linear pattern. Therefore this function has a notation of O(n) ---> Linear Time, big O depends on number of inputs linearly
 
 function compressBox(boxes) {
   console.log(boxes[0])
@@ -32,7 +32,7 @@ function boxCompression (boxes1, boxes2) {
   boxes2.forEach(function(box) {
     console.log(box)
   }) //O(m)
-  
+
 }
 
 //Big O ---> O(n + m) each input parameter is assessed seperately
@@ -51,7 +51,7 @@ const logPairs = function(array){
 
 logPairs(boxes)
 
-//when you see nested loops think multiplication 
+//when you see nested loops think multiplication
 //O(n*n) ---> O(n^2) ---> Quadratic Time
 
 //if the second loop had a different input then iit would be O(n*m)
@@ -77,8 +77,7 @@ function arrayOfHiNTimes(n) {
 // arrayOfHiNTimes(6)
 
 //We create a variable (i) and a datastructure (the array) so its is O(n+1) or just O(n)
-
 //Twitter exampl, find 1st, find nth....
-const array = [{'hi'}, 'my', 'teddy']
+const array = [{'hi':'hi'}, 'my', 'teddy']
 array[0]
 array[array.length-1] // O(1)
