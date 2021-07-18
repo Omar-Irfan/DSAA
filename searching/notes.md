@@ -133,3 +133,8 @@ Postorder - left hand side, chiildren before parent then right hand side then ch
   inorder - 1, 4, 6, 9, 15, 20, 170 -prints in order from left too right of BTS
   preorder - 9, 4, 1, 6, 20, 15, 170 -useful for recreating tree
   postorder - 1, 6, 4, 15, 170, 20, 9 - 
+
+  ## Graphs
+  -The functions are very similar for graph traversal
+  -Breadth First Search - Shortest Path
+  -Depth First Search - Check to see if it exists
