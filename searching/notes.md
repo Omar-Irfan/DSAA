@@ -75,8 +75,8 @@ Two options both are O(n)
   
   Pros:
 
-  -good for finding Shortest Path btween root and node
-  -Closer Nodes first
+  -good for finding Shortest Path between root and node
+  -looks at closer Nodes first
 
   Cons:
 
@@ -138,3 +138,24 @@ Postorder - left hand side, chiildren before parent then right hand side then ch
   -The functions are very similar for graph traversal
   -Breadth First Search - Shortest Path
   -Depth First Search - Check to see if it exists
+
+  ## BFS with Graphs
+  -Allows you to determine shortest path in a graph btwn any node
+  -Used in reccomendations, google maps
+  -BFS basically converts graphs into trees
+
+  ## DFS with Graphs
+  -Basically like solving a maze
+  -Thats why we use recursion, you back track and try again
+  -Answers the question "does the path exist"
+
+  ## Dijkstra + Bellman-Ford Algorithims
+  -Used for shortest path problems in a special case
+  -BFS can't do one thing it, assumes each path has the same weight
+  -Bellman-Ford and Dijkstra are ways to find the shortest path in a graph with weighted edges
+  -Bellman-Ford can accomodate negative weight but can take a long time to run worst case is O(n^2)
+  -Dijkstra is faster than that but can't accomodate negative weight
+
+  ## Summary
+  -Discussed Linear, Binary, BFS and DFS
+  -Also diiscussed advanced shortest path algorithims
