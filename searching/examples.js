@@ -84,7 +84,50 @@ class BinarySearchTree {
     queue.push(currentNode.right)
   }
   return this.breadthFirstSearchR(queue, list)
+  }
+  DFSInorder() {
+    return traverseInOrder(this.root, [])
+
+  }
+  DFSPostorder() {
+    return traversePostOrder(this.root, [])
+
+  }
+  DFSPreorder() {
+    return traversePreOrder(this.root, [])
+
+  }
 }
+
+function traverseInOrder(node, list) {
+  if (node.left) {
+    traverseInOrder(node.left, list) //memory consumption is O(height of the tree)
+  }
+  list.push(node.value)
+  if (node.right) {
+    traverseInOrder(node.right, list)
+  }
+  return list
+}
+function traversePreOrder(node, list) {
+  list.push(node.value)
+  if (node.left) {
+    traversePreOrder(node.left, list)
+  }
+  if (node.right) {
+    traversePreOrder(node.right, list)
+  }
+  return list
+}
+function traversePostOrder(node, list) {
+  if (node.left) {
+    traversePostOrder(node.left, list)
+  }
+  if (node.right) {
+    traversePostOrder(node.right, list)
+  }
+  list.push(node.value)
+  return list
 }
 
 const tree = new BinarySearchTree();

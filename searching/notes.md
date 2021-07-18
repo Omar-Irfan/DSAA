@@ -120,3 +120,16 @@ DFS
 
 //Finding the shortest path
 BFS
+
+## Three methods of DFS
+Inorder, - all nodes left to right
+Preorder, - start with parent and grab child nodes left to rigth
+Postorder - left hand side, chiildren before parent then right hand side then children before parent then root
+
+     9
+  4     20
+1   6 15  170
+
+  inorder - 1, 4, 6, 9, 15, 20, 170 -prints in order from left too right of BTS
+  preorder - 9, 4, 1, 6, 20, 15, 170 -useful for recreating tree
+  postorder - 1, 6, 4, 15, 170, 20, 9 - 
